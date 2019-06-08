@@ -24,13 +24,15 @@ export function getBlogUrl(publishedAt, slug) {
 export function wordCount(rawbody) {
   let wordCount = 0;
 
-  rawbody.forEach(body => {
-    if (body.children) {
-      body.children.forEach(child => {
-        wordCount = wordCount + child.text.split(" ").length;
-      });
-    }
-  });
+  if (rawbody && rawbody.length !== 0) {
+    rawbody.forEach(body => {
+      if (body.children) {
+        body.children.forEach(child => {
+          wordCount = wordCount + child.text.split(" ").length;
+        });
+      }
+    });
+  }
   const result = Math.round(wordCount / 180);
   return result === 0 ? 1 : result;
 }
