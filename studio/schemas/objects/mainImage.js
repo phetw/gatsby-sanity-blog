@@ -3,7 +3,7 @@ export default {
   type: 'image',
   title: 'Image',
   options: {
-    hotspot: true
+    metadata: ['lqip']
   },
   fields: [
     {
