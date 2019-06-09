@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "gatsby-sanity-blog",
+  "name": "b-log-lerna",
   "version": "1.0.0",
   "scripts": {
     "build": "lerna run build --parallel",
