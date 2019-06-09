@@ -1,9 +1,7 @@
 {
-  "private": true,
   "name": "b-log-studio",
   "version": "1.0.0",
   "main": "package.json",
-  "author": "Sanity <hello@sanity.io>",
   "scripts": {
     "dev": "sanity start",
     "format": "prettier-eslint --write \"**/*.js\" \"!node_modules/**\"",
