@@ -68,7 +68,6 @@ yarn.lock
 .yarn-integrity
 
 # Lock files
-/package-lock.json
 /yarn.lock
 
 # Secrets
